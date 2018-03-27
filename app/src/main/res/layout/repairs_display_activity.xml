@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Repair"
+        android:id="@+id/addButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="newRepair"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Selection"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="vehicleSelection"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableTitles">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/titles">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:gravity="left"
+                android:layout_column="0"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/costTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cost"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:layout_column="1"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Date"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:layout_column="2"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/mileageTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mileage"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:gravity="right"
+                android:layout_column="3"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/repairedTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Repaired by"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_column="4"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/padTextView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:text="Edit"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                android:layout_column="5" />
+
+            <TextView
+                android:id="@+id/padTextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="8sp"
+                android:text="Delete"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                android:layout_column="6" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addButton"
+        android:stretchColumns="*"
+        android:layout_below="@+id/tableTitles">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/listView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=30:06:25:3A:5C:B8:AF:B4:17:5A:0A:F6:7C:BC:5C:67:2D:45:B6:7A%3Bcom.example.vance.automaintenancetracker
+
+    You can also add your credentials to an existing key, using this line:
+    30:06:25:3A:5C:B8:AF:B4:17:5A:0A:F6:7C:BC:5C:67:2D:45:B6:7A;com.example.vance.automaintenancetracker
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyAzuXJnoeT-yt8Jchnu-JOaZDJIh2qnLUs
+    </string>
+</resources>
